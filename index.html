@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>La Nave – Italienische Spezialitäten Alzey</title>
+  <meta name="description" content="Seit 1991 serviert Familie Strabone im LA NAVE in der Spießgasse, Alzey, Pizza, Pasta und andere italienische Spezialitäten. Pizza Alzey, Italienisches Restaurant Alzey." />
+  <meta name="keywords" content="Pizza Alzey, Italienisches Restaurant Alzey, La Nave Alzey, Pasta Alzey, Sizilianisch Alzey" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="La Nave – Italienische Spezialitäten Alzey" />
+  <meta property="og:description" content="Familienrestaurant seit 1991 · Familie Strabone · Spießgasse 8, 55232 Alzey" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.la-nave-alzey.de/" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/features.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/reviews.css" />
+  <link rel="stylesheet" href="css/location.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="logo">La <span>Nave</span></div>
+
+    <div class="nav-links">
+      <a onclick="scrollTo('#home')">Home</a>
+      <a onclick="scrollTo('#menu')">Speisekarte</a>
+      <a onclick="scrollTo('#about')">Über uns</a>
+      <a onclick="scrollTo('#contact')" class="nav-cta">Reservierung</a>
+    </div>
+
+    <button class="burger" onclick="openMenu()" aria-label="Menü öffnen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" onclick="closeMenu()" aria-label="Menü schließen">✕</button>
+    <a onclick="scrollTo('#home');    closeMenu()">Home</a>
+    <a onclick="scrollTo('#menu');    closeMenu()">Speisekarte</a>
+    <a onclick="scrollTo('#about');   closeMenu()">Über uns</a>
+    <a onclick="scrollTo('#contact'); closeMenu()">Reservierung</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">🍕 Familienrestaurant · Alzey seit 1991</div>
+
+      <h1 class="hero-title">
+        Authentic Italian<br>
+        <em>Pizza</em> in Alzey
+      </h1>
+
+      <p class="hero-sub">
+        Frische Zutaten · Familie Strabone seit 1991 · Sizilianische Tradition
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn-primary" onclick="scrollTo('#menu')">
+          Speisekarte ansehen
+        </button>
+        <a href="tel:+4967311517" class="btn-secondary">
+          📞 +49 6731-1517
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Entdecken</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FEATURES
+  ═══════════════════════════════════════ -->
+  <section class="features fade-in" id="features">
+    <div class="section-header section-header--center">
+      <div class="eyebrow">Warum La Nave</div>
+      <h2 class="section-title">Unsere <em>Versprechen</em> an Sie</h2>
+      <div class="divider divider--center"></div>
+    </div>
+
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon">🌿</div>
+        <h3 class="feature-title">Regionale & italienische Zutaten</h3>
+        <p class="feature-desc">
+          Schweinefleisch aus der Region, echte italienische Zutaten aus einer kleinen
+          Manufaktur — kein Kompromiss bei der Qualität.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">👨‍🍳</div>
+        <h3 class="feature-title">Sizilianische Familienrezepte</h3>
+        <p class="feature-desc">
+          Familie Strabone aus Sizilien bringt ihre lange Gastronomen-Tradition mit
+          hausgemachten Rezepten in den Alzeyer Altstadtkern.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">☀️</div>
+        <h3 class="feature-title">Terrasse in der Fußgängerzone</h3>
+        <p class="feature-desc">
+          36 Innenplätze und 60 Außenplätze auf der schönen Terrasse —
+          mit Blick auf das alte Rathaus und den Volkerbrunnen.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🍕</div>
+        <h3 class="feature-title">Alle Speisen zum Mitnehmen</h3>
+        <p class="feature-desc">
+          Ob Pizza, Pasta oder Fischgericht — genießen Sie unser gesamtes Menü
+          auch bequem zu Hause. Täglich wechselnder Mittagstisch.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       MENU
+  ═══════════════════════════════════════ -->
+  <section class="menu-section fade-in" id="menu">
+    <div class="section-header">
+      <div class="eyebrow">Speisekarte</div>
+      <h2 class="section-title">Unser <em>Menü</em></h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        Jedes Gericht wird nach sizilianischen Familienrezepten frisch zubereitet.
+        Täglich wechselnder Mittagstisch.
+      </p>
+    </div>
+
+    <!-- Category tabs — rendered by JS -->
+    <div class="menu-tabs" id="menu-tabs"></div>
+
+    <!-- Menu cards — rendered by JS -->
+    <div class="menu-grid" id="menu-grid"></div>
+
+    <div class="menu-note fade-in">
+      <span class="menu-note-icon">📄</span>
+      <div>
+        <strong>Vollständige Speisekarte 2025 verfügbar</strong><br>
+        <a
+          href="https://www.la-nave-alzey.de/app/download/13367684349/La%20Nave%20Men%C3%BCkarte%202025.pdf"
+          target="_blank"
+          rel="noopener"
+          class="menu-note-link"
+        >
+          → PDF herunterladen
+        </a>
+        &nbsp;·&nbsp; Alle Speisen auch zum Mitnehmen!
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════ -->
+  <section class="about fade-in" id="about">
+    <div class="about-inner">
+
+      <div class="about-visual">
+        <div class="about-emoji">🍕</div>
+      </div>
+
+      <div class="about-text">
+        <div class="eyebrow">Unsere Geschichte</div>
+        <h2 class="section-title">
+          Familie Strabone.<br>
+          <em>Sizilianische</em> Leidenschaft.
+        </h2>
+        <div class="divider"></div>
+
+        <p>
+          Seit 1991 serviert Familie Strabone im LA NAVE in der Spießgasse,
+          im historischen Stadtkern von Alzey, Pizza, Pasta und andere italienische
+          Spezialitäten. Das Restaurant ist der am längsten eingesessene Italiener in Alzey.
+        </p>
+        <p>
+          Zunächst vom Onkel eröffnet, übernahmen die Eltern das La Nave 1991 —
+          seit 2015 leitet Angelo Strabone das Restaurant in zweiter Generation.
+          Familie Strabone stammt aus einer langen Tradition von Gastronomen aus Sizilien.
+        </p>
+        <p>
+          Neben Pizza und Pasta gibt es einen täglich wechselnden Mittagstisch
+          sowie Fisch- und Fleischgerichte. Für Angelo sind Qualität und
+          Kundenzufriedenheit oberste Priorität.
+        </p>
+
+        <blockquote class="about-quote">
+          "Wir sind, wer wir sind."
+          <cite>— Angelo Strabone</cite>
+        </blockquote>
+
+        <div class="about-badges">
+          <div class="about-badge">
+            <strong>1991</strong>
+            Gegründet
+          </div>
+          <div class="about-badge">
+            <strong>2. Gen.</strong>
+            Familie Strabone
+          </div>
+          <div class="about-badge">
+            <strong>36 + 60</strong>
+            Plätze
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       REVIEWS
+  ═══════════════════════════════════════ -->
+  <section class="reviews fade-in">
+    <div class="reviews-inner">
+      <div class="eyebrow">Bewertungen</div>
+      <h2 class="section-title">Was unsere <em>Gäste</em> sagen</h2>
+      <div class="divider"></div>
+
+      <div class="reviews-track-wrap">
+        <!-- Review cards — rendered by JS -->
+        <div class="reviews-track" id="reviews-track"></div>
+      </div>
+
+      <div class="reviews-controls">
+        <button class="reviews-btn" id="reviews-prev" aria-label="Zurück">←</button>
+        <div class="reviews-dots" id="reviews-dots"></div>
+        <button class="reviews-btn" id="reviews-next" aria-label="Weiter">→</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       LOCATION
+  ═══════════════════════════════════════ -->
+  <section class="location fade-in">
+    <div class="section-header">
+      <div class="eyebrow">Wo wir sind</div>
+      <h2 class="section-title">Besuchen Sie <em>uns</em></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="location-inner">
+
+      <!-- Google Maps embed -->
+      <div class="location-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.2!2d8.1148!3d49.7452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bde44e8a9f1e41%3A0x2f5e3e!2sSp%C3%9Fgasse+8%2C+55232+Alzey!5e0!3m2!1sde!2sde!4v1650000000"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="La Nave Alzey – Spießgasse 8"
+        ></iframe>
+      </div>
+
+      <!-- Info blocks -->
+      <div class="location-info">
+
+        <div class="info-block">
+          <h4>📍 Adresse</h4>
+          <p class="info-address">
+            LA NAVE<br>
+            Spießgasse 8<br>
+            55232 Alzey
+          </p>
+          <p class="info-hint">
+            Historischer Altstadtkern · Fußgängerzone<br>
+            Blick auf altes Rathaus & Volkerbrunnen
+          </p>
+        </div>
+
+        <div class="info-block">
+          <h4>🕐 Öffnungszeiten</h4>
+          <div class="hours-table">
+            <div class="hours-row">
+              <span class="hours-day">Mo, Di, Do, Fr, Sa</span>
+              <span class="hours-time">11:30 – 14:30 Uhr</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Mo, Di, Do, Fr, Sa</span>
+              <span class="hours-time">17:30 – 22:00 Uhr</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Sonntag</span>
+              <span class="hours-time">11:30 – 22:00 Uhr</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Mittwoch</span>
+              <span class="hours-time hours-time--closed">⛔ Ruhetag</span>
+            </div>
+          </div>
+          <p class="info-hint">Küchenzeiten: 11:30–14:00 & 17:30–21:30 Uhr</p>
+        </div>
+
+        <a href="tel:+4967311517" class="call-button">
+          📞 +49 6731-1517 &nbsp; Jetzt anrufen
+        </a>
+
+        <div class="reservation-note">
+          <strong>Reservierung nur telefonisch</strong>
+          Tischreservierungen nehmen wir ausschließlich telefonisch
+          zu den Öffnungszeiten entgegen.
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════ -->
+  <section class="contact fade-in" id="contact">
+    <div class="section-header">
+      <div class="eyebrow">Kontakt & Reservierung</div>
+      <h2 class="section-title">Schreiben Sie <em>uns</em></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="contact-inner">
+
+      <!-- Form -->
+      <div class="contact-form-wrap">
+        <div class="reservation-warning">
+          <strong>⚠️ Tischreservierungen nur telefonisch!</strong>
+          Bitte haben Sie Verständnis — Reservierungen nehmen wir nur telefonisch
+          zu den Öffnungszeiten entgegen. Auf Nachrichten antworten wir innerhalb von 48 Stunden.
+        </div>
+
+        <div id="form-area">
+          <div class="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="form-name">Name *</label>
+              <input class="form-input" id="form-name" type="text" placeholder="Ihr Name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-email">E-Mail *</label>
+              <input class="form-input" id="form-email" type="email" placeholder="ihre@email.de" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-message">Nachricht *</label>
+              <textarea
+                class="form-textarea"
+                id="form-message"
+                placeholder="Ihre Frage oder Nachricht (keine Tischreservierungen per E-Mail möglich)..."
+              ></textarea>
+            </div>
+            <button class="btn-submit" onclick="submitForm()">
+              Nachricht senden →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact info -->
+      <div class="contact-info">
+
+        <div class="contact-item">
+          <span class="contact-item-icon">📍</span>
+          <div>
+            <div class="contact-item-label">Adresse</div>
+            <div class="contact-item-value">Spießgasse 8, 55232 Alzey</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-item-icon">📞</span>
+          <div>
+            <div class="contact-item-label">Telefon (auch Reservierung)</div>
+            <div class="contact-item-value contact-item-value--orange">+49 6731-1517</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-item-icon">🕐</span>
+          <div>
+            <div class="contact-item-label">Öffnungszeiten</div>
+            <div class="contact-item-value">
+              11:30–14:30 & 17:30–22:00 Uhr<br>
+              <small class="text-muted">Mittwoch Ruhetag</small>
+            </div>
+          </div>
+        </div>
+
+        <a href="tel:+4967311517" class="call-button">
+          📞 Direkt anrufen: +49 6731-1517
+        </a>
+
+        <a
+          href="https://www.la-nave-alzey.de/app/download/13367684349/La%20Nave%20Men%C3%BCkarte%202025.pdf"
+          target="_blank"
+          rel="noopener"
+          class="pdf-button"
+        >
+          📄 Speisekarte 2025 als PDF
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <div class="logo">La <span>Nave</span></div>
+        <p>
+          Authentische sizilianische Pizza und Pasta in Alzey.
+          Seit 1991 führt Familie Strabone das am längsten eingesessene
+          italienische Restaurant in Alzey.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a onclick="scrollTo('#home')">Home</a></li>
+          <li><a onclick="scrollTo('#menu')">Speisekarte</a></li>
+          <li><a onclick="scrollTo('#about')">Über uns</a></li>
+          <li><a onclick="scrollTo('#contact')">Reservierung</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Öffnungszeiten</h5>
+        <ul>
+          <li>Mo, Di, Do–Sa &nbsp;<strong>11:30–14:30</strong></li>
+          <li>Mo, Di, Do–Sa &nbsp;<strong>17:30–22:00</strong></li>
+          <li>Sonntag &nbsp;<strong>11:30–22:00</strong></li>
+          <li class="footer-closed">⛔ Mittwoch Ruhetag</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 LA NAVE · Spießgasse 8 · 55232 Alzey · +49 6731-1517</span>
+      <span>Pizza Alzey · Italienisches Restaurant Alzey</span>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/reviews.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/animations.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* ═══════════════════════════════════════
+   MENU
+═══════════════════════════════════════ */
+
+.menu-section {
+  background: var(--color-bg);
+}
+
+/* ── Category tabs ──────────────────── */
+.menu-tabs {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-tab {
+  background: var(--color-bg-3);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  padding: 0.42rem 1.05rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all var(--transition);
+}
+
+.menu-tab:hover,
+.menu-tab.active {
+  background: var(--color-orange);
+  border-color: var(--color-orange);
+  color: #fff;
+}
+
+/* ── Cards grid ─────────────────────── */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  gap: 1.1rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ── Individual card ────────────────── */
+.menu-card {
+  background: var(--color-bg-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.menu-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 106, 0, 0.35);
+  box-shadow: 0 6px 20px rgba(255, 106, 0, 0.08);
+}
+
+.menu-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.menu-card-emoji {
+  font-size: 1.7rem;
+}
+
+.menu-card-price {
+  background: var(--color-orange-dim);
+  color: var(--color-orange);
+  border: 1px solid rgba(255, 106, 0, 0.2);
+  padding: 0.17rem 0.62rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.menu-card-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-cream);
+}
+
+.menu-card-desc {
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* ── Add to order button ────────────── */
+.menu-card-btn {
+  margin-top: 0.6rem;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  padding: 0.42rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.77rem;
+  font-weight: 500;
+  width: 100%;
+  transition: all var(--transition);
+}
+
+.menu-card-btn:hover {
+  background: var(--color-orange);
+  border-color: var(--color-orange);
+  color: #fff;
+}
+
+.menu-card-btn.added {
+  background: rgba(34, 197, 94, 0.12);
+  border-color: rgba(34, 197, 94, 0.3);
+  color: var(--color-success);
+}
+
+/* ── PDF note ───────────────────────── */
+.menu-note {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: var(--max-width);
+  margin: 1.75rem auto 0;
+  background: var(--color-bg-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.4rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.menu-note-icon {
+  font-size: 1.3rem;
+}
+
+.menu-note strong {
+  color: var(--color-cream);
+}
+
+.menu-note-link {
+  color: var(--color-orange);
+  font-weight: 600;
+  transition: color var(--transition);
+}
+
+.menu-note-link:hover {
+  color: var(--color-orange-hover);
+}

@@ -1,0 +1,130 @@
+/* ═══════════════════════════════════════
+   BASE — shared helpers & components
+═══════════════════════════════════════ */
+
+/* ── Section layout ─────────────────── */
+section {
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+.section-header {
+  max-width: var(--max-width);
+  margin: 0 auto 2rem;
+}
+
+.section-header--center {
+  text-align: center;
+}
+
+/* ── Eyebrow label ──────────────────── */
+.eyebrow {
+  color: var(--color-orange);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+/* ── Section title ──────────────────── */
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 4vw, 2.9rem);
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--color-cream);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.8rem;
+}
+
+.section-title em {
+  color: var(--color-orange);
+  font-style: italic;
+}
+
+/* ── Section subtext ────────────────── */
+.section-sub {
+  color: var(--color-text-muted);
+  max-width: 500px;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* ── Decorative divider ─────────────── */
+.divider {
+  width: 44px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-orange), transparent);
+  border-radius: 2px;
+  margin: 1.2rem 0;
+}
+
+.divider--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Buttons ────────────────────────── */
+.btn-primary {
+  background: var(--color-orange);
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border: none;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+  box-shadow: var(--shadow-orange);
+}
+
+.btn-primary:hover {
+  background: var(--color-orange-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-orange-hover);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-cream);
+  padding: 0.8rem 1.8rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--color-cream-border);
+  transition: all var(--transition);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-orange);
+  color: var(--color-orange);
+  transform: translateY(-2px);
+}
+
+/* ── Call button (shared by Location & Contact) ── */
+.call-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--color-orange);
+  color: #fff;
+  padding: 0.82rem 1.3rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  font-weight: 700;
+  transition: all var(--transition);
+  box-shadow: 0 0 18px rgba(255, 106, 0, 0.25);
+}
+
+.call-button:hover {
+  background: var(--color-orange-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(255, 106, 0, 0.4);
+}
+
+/* ── Utility ─────────────────────────── */
+.text-muted {
+  color: var(--color-text-muted);
+}

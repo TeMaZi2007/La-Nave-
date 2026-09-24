@@ -1,0 +1,84 @@
+/* ═══════════════════════════════════════
+   RESPONSIVE  (mobile-first breakpoints)
+═══════════════════════════════════════ */
+
+/* ── Tablet & below (≤ 900px) ───────── */
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Mobile (≤ 700px) ───────────────── */
+@media (max-width: 700px) {
+
+  /* Nav */
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Features */
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* About */
+  .about-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .about-visual {
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Reviews */
+  .review-card {
+    min-width: 260px;
+  }
+
+  /* Location */
+  .location-inner {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact */
+  .contact-inner {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ── Small mobile (≤ 420px) ─────────── */
+@media (max-width: 420px) {
+  .menu-tabs {
+    gap: 0.35rem;
+  }
+
+  .menu-tab {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.85rem;
+  }
+
+  .about-badges {
+    flex-direction: column;
+  }
+}
